@@ -88,3 +88,6 @@
 /home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/obj/Debug/net6.0/ref/unwallet.dll
 /home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/obj/Debug/net6.0/unwallet.pdb
 /home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/obj/Debug/net6.0/unwallet.genruntimeconfig.cache
+/home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/bin/Debug/net6.0/RabbitMQ.Client.dll
+/home/lorenzzo/swarch2023/unwallet/unwallet_scheduled_payments_ms/bin/Debug/net6.0/System.Threading.Channels.dll

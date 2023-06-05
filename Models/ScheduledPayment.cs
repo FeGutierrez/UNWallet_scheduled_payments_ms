@@ -28,7 +28,6 @@ namespace unwallet.Models{
         [BsonElement("payment_method")]
         [JsonPropertyName("payment_method")]
         public string? PaymentMethod {get; set;}
-
         
         [BsonElement("recipient")]
         [JsonPropertyName("recipient")]

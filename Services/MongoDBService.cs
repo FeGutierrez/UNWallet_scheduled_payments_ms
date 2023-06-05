@@ -23,7 +23,7 @@ public class MongoDBService{
 
     public async Task<ScheduledPayment> GetByIdAsync(string id)
     {
-        var filter = Builders<ScheduledPayment>.Filter.Eq(m => m._id, id);
+        var filter = Builders<ScheduledPayment>.Filter.Eq( m => m._id, id);
         return await _scheduledPaymentCollection.Find(filter).FirstOrDefaultAsync();
     }    
 
@@ -50,6 +50,12 @@ public class MongoDBService{
             Builders<ScheduledPayment>.Filter.Eq(sPayment => sPayment._id, id)
         );
         return deleteResult.DeletedCount > 0;
+    }
+
+    public async Task<List<ScheduledPayment>> GetListFromIntegerAsync(int n){
+        var filter = Builders<ScheduledPayment>.Filter.Eq("user_id", n);
+        var payments = await _scheduledPaymentCollection.Find(filter).ToListAsync();
+        return payments;
     }
 
 }

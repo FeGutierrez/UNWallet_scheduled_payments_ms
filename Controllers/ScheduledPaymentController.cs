@@ -20,14 +20,14 @@ namespace unwallet.Controllers
 
 
         [HttpGet]
-        //[Route("list")]
+        [Route("list")]
         public async Task<List<ScheduledPayment>> GetScheduledPayments()
         {
             return await _mongoDBService.GetAsync();
         }
 
-        [NonAction]
-        [HttpGet("{id}", Name="GetById")]
+        //[NonAction]
+        [HttpGet("list/{_id}", Name="GetById")]
         //[Route("list")]
         public async Task<ActionResult<ScheduledPayment>> GetScheduledPaymentById(string _id)
         {
